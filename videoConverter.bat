@@ -1,10 +1,10 @@
+::rem ç”¨äºŽè½¬æ¢è§†é¢‘æ–‡ä»¶æ ¼å¼åŠå¤§å°
+
 @echo off
 
 setlocal enabledelayedexpansion 
 set pixw=%2
 set pixh=%3
-
-::rem ÓÃÓÚ×ª»»ÊÓÆµÎÄ¼þ¸ñÊ½¼°´óÐ¡
 
 if "%1"=="" goto usage
 if "%1"=="/?" goto usage
@@ -20,10 +20,10 @@ goto end
 
 :usage
 echo.
-echo ¸Ã¹¤¾ßÓÃÓÚ×ª»»ÊÓÆµÎÄ¼þ¸ñÊ½¼°´óÐ¡¡£ÐÂÀÏÎÄ¼þÔÚÏàÍ¬Ä¿Â¼(Ô­Ãû_s.ÐÂºó×º)
-echo ÐèÒªµ÷ÓÃQuickMediaEditorÖÐÀ¦°óµÄffmpeg£¬»òÇëµ¥¶À°²×°ffmpeg£¬²¢ÉèÖÃPATH»·¾³±äÁ¿¡£
+echo è¯¥å·¥å…·ç”¨äºŽè½¬æ¢è§†é¢‘æ–‡ä»¶æ ¼å¼åŠå¤§å°ã€‚æ–°è€æ–‡ä»¶åœ¨ç›¸åŒç›®å½•(åŽŸå_s.æ–°åŽç¼€)
+echo éœ€è¦è°ƒç”¨QuickMediaEditorä¸­æ†ç»‘çš„ffmpegï¼Œæˆ–è¯·å•ç‹¬å®‰è£…ffmpegï¼Œå¹¶è®¾ç½®PATHçŽ¯å¢ƒå˜é‡ã€‚
 echo.
-echo Ê¹ÓÃ·½·¨£ºav2x.bat  Ô´ÊÓÆµÎÄ¼þÃû ¿í¶Èpix ¸ß¶Èpix
+echo ä½¿ç”¨æ–¹æ³•ï¼šav2x.bat  æºè§†é¢‘æ–‡ä»¶å å®½åº¦pix é«˜åº¦pix
 echo.
 
 :end
