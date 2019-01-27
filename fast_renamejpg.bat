@@ -1,6 +1,6 @@
 :::::::批量修改jpg文件名.bat:::::::
 @echo off
-title 批量修改jpg文件名，将jpg文件的名称格式化为=> prefix06.jpg and prefix26.jpg
+title 批量修改jpg文件名，将jpg文件的名称格式化为=> prefix06.jpg ，prefix26.jpg
 setlocal EnableDelayedExpansion
 :: 启用延迟变量扩充
  
