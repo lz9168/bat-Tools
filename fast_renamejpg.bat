@@ -1,15 +1,15 @@
-:::::::ÅúÁ¿ĞŞ¸ÄjpgÎÄ¼şÃû.bat:::::::
+:::::::æ‰¹é‡ä¿®æ”¹jpgæ–‡ä»¶å.bat:::::::
 @echo off
-title ÅúÁ¿ĞŞ¸ÄjpgÎÄ¼şÃû
+title æ‰¹é‡ä¿®æ”¹jpgæ–‡ä»¶åï¼Œå°†jpgæ–‡ä»¶çš„åç§°æ ¼å¼åŒ–ä¸º=> prefix06.jpg and prefix26.jpg
 setlocal EnableDelayedExpansion
-:: ÆôÓÃÑÓ³Ù±äÁ¿À©³ä
+:: å¯ç”¨å»¶è¿Ÿå˜é‡æ‰©å……
  
 :GetPath
 set zpath=%CD%
  
 :GetPrefix
-set prefix=Î´ÃüÃû
-set /p prefix=ÇëÊäÈëĞÂÇ°×º(½ûÓÃ×Ö·û\/:*?"<>|)£º
+set prefix=æœªå‘½å
+set /p prefix=è¯·è¾“å…¥æ–°å‰ç¼€(ç¦ç”¨å­—ç¬¦\/:*?"<>|)ï¼š
 for /f "delims=\/:*?<>| tokens=2" %%i in ("z%prefix%z") do goto :GetPrefix
  
 :GetExt
@@ -23,17 +23,17 @@ for %%i in ("%zpath%\*%ext%") do (
 echo "!num!%%i"
 
     if !num! LSS 10 (
-        ren "%%i" "%prefix%0!num!%ext%" || echo ÎÄ¼ş %%i ¸ÄÃûÊ§°Ü && set /a num-=1
+        ren "%%i" "%prefix%0!num!%ext%" || echo æ–‡ä»¶ %%i æ”¹åå¤±è´¥ && set /a num-=1
     ) else ( 
-        ren "%%i" "%prefix%!num!%ext%" || echo ÎÄ¼ş %%i ¸ÄÃûÊ§°Ü && set /a num-=1
+        ren "%%i" "%prefix%!num!%ext%" || echo æ–‡ä»¶ %%i æ”¹åå¤±è´¥ && set /a num-=1
     )
 
     set /a num+=1
 )
  
-if %num%==0 echo %zpath%\ ÀïÎ´·¢ÏÖÈÎºÎÎÄ¼ş¡£°´ÈÎÒâ¼üÍË³ö... & goto :PauseThenQuit
+if %num%==0 echo %zpath%\ é‡Œæœªå‘ç°ä»»ä½•æ–‡ä»¶ã€‚æŒ‰ä»»æ„é”®é€€å‡º... & goto :PauseThenQuit
 
-echo ÎÄ¼ş¸ÄÃûÍê³É£¬°´ÈÎÒâ¼üÍË³ö...
+echo æ–‡ä»¶æ”¹åå®Œæˆï¼ŒæŒ‰ä»»æ„é”®é€€å‡º...
  
 :PauseThenQuit
 :pause>nul
