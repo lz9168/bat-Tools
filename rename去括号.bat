@@ -1,11 +1,11 @@
-:: ¸ÄÐ´¡°img (1).jpg¡±ÕâÑùµÄÎÄ¼þÃû³ÆÎª ¡°img_1.jpg¡±
+:: æ”¹å†™â€œimg (1).jpgâ€è¿™æ ·çš„æ–‡ä»¶åç§°ä¸ºï¼šâ€œimg_1.jpgâ€
 
 @Echo Off & SetLocal ENABLEDELAYEDEXPANSION
 
 FOR %%a in (*) do (
   set "name=%%a"
 
-::Èç¹û²»ÏëÒªÏÂ»®Ïß£¬¾ÍÖ±½ÓÈ¥µô¾Í¿ÉÒÔ
+::å¦‚æžœä¸æƒ³è¦ä¸‹åˆ’çº¿ï¼Œå°±ç›´æŽ¥åŽ»æŽ‰å°±å¯ä»¥
   set "name=!name: (=_!"
   set "name=!name:)=!"
   ren "%%a" "!name!"
